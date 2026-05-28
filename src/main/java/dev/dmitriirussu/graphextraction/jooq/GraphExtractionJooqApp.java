@@ -12,7 +12,7 @@ public class GraphExtractionJooqApp {
 		SpringApplication.run(GraphExtractionJooqApp.class, args);
 	}
 	// Demo output for manual verification of graph extraction queries
-	/*@Bean
+	@Bean
 	CommandLineRunner demo(OwnerReadRepository repository) {
 		return args -> {
 			System.out.println("\n=== All owners - full graph ===\n");
@@ -24,5 +24,7 @@ public class GraphExtractionJooqApp {
 			System.out.println("\n=== Find owner by id='1' ===\n");
 			repository.findByIdWithGraph("1").ifPresent(System.out::println);
 		};
-	}*/
+	}
 }
+
+//mvn jooq-codegen:generate
