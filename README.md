@@ -1,4 +1,5 @@
-# jooq-graph-extraction-no-pagination
+# persistence-graph-extraction-jooq
+
 Demonstrates how to assemble an object graph from a relational database using jOOQ (`DSLContext`) and `MULTISET` without ORM or pagination.
 
 ## What it shows
@@ -62,12 +63,12 @@ Integration tests in `src/test/java` cover graph assembly, flat list extraction,
 
 ## Related
 
-* [jdbc-graph-extraction-no-pagination](https://github.com/persistence-graph-extraction/jdbc-graph-extraction-no-pagination) — same approach with plain JDBC
-* [jpa-graph-extraction-no-pagination](https://github.com/persistence-graph-extraction/jpa-graph-extraction-no-pagination) — same approach with JPA + Blaze Persistence
-* [jooq-graph-extraction-pagination](https://github.com/persistence-graph-extraction/jooq-graph-extraction-pagination) — same approach with pagination support
+* [persistence-graph-extraction-jdbc](https://github.com/java-backend-architecture/persistence-graph-extraction-jdbc) — same approach with plain JDBC
+* [persistence-graph-extraction-jpa](https://github.com/java-backend-architecture/persistence-graph-extraction-jpa) — same approach with JPA + Blaze Persistence
+* [persistence-graph-pagination-jdbc](https://github.com/java-backend-architecture/persistence-graph-pagination-jdbc) — same approach with pagination support
 
 ## Run
 
-```
+```bash
 ./mvnw spring-boot:run
 ```
